@@ -15,21 +15,6 @@
             hsl(227deg 54% 50%) 100%);
 }
 
-.body-login {
-    background-color: #fefefe;
-    position: relative;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 15px;
-    width: 60%;
-    height: 650px;
-    max-height: 95vw;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
 html {
     height: 100%;
 }
@@ -39,6 +24,23 @@ body {
     height: 100%;
     min-height: 100vh;
     background-image: var(--bg-gradient);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.body-login {
+    background-color: #fefefe;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 400px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    margin: 20px;
 }
 
 h1 {
@@ -50,18 +52,11 @@ label {
     color: #00D1FF;
 }
 
-form-floating {
-    background-color: #D9D9D9;
-}
-
-.form-check-label {
-    color: #00D1FF;
-    ;
-}
-
 .form-container {
+    width: 100%;
     max-width: 350px;
     padding: 1rem;
+    box-sizing: border-box;
 }
 
 .next-page {
@@ -70,6 +65,7 @@ form-floating {
 
 .btn {
     background-color: #00D1FF;
+    width: 100%;
 }
 
 .Our {
@@ -79,34 +75,39 @@ form-floating {
 .facebook {
     color: #3b5998;
     margin: 10px;
-    align-items: center;
 }
 
 .google {
     color: #ea4335;
     margin: 10px;
-    align-items: center;
 }
 
 img {
-    position: bottom;
-    align-items: bottom;
-    max-width: 150%;
+    max-width: 100%;
     height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-@media (max-width:1400px) {
+@media (min-width: 768px) {
     .body-login {
-        height: 600px;
+        width: 60%;
+        max-width: 600px;
+        padding: 30px;
     }
 }
 
-@media (max-width:1024px) {
+@media (min-width: 1024px) {
     .body-login {
-        height: 650px;
+        max-width: 800px;
     }
 }
 
+@media (min-width: 1400px) {
+    .body-login {
+      max-width: 900px;
+    }
+}
 @media (max-width:768px) {
     .body-login {
         height: 610px;
