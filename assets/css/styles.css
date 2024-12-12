@@ -1,0 +1,114 @@
+:root {
+    --bg-gradient: linear-gradient(180deg,
+            hsl(191deg 100% 50%) 0%,
+            hsl(193deg 100% 50%) 0%,
+            hsl(194deg 100% 49%) 0%,
+            hsl(196deg 100% 49%) 0%,
+            hsl(198deg 100% 48%) 0%,
+            hsl(200deg 100% 47%) 1%,
+            hsl(202deg 100% 47%) 3%,
+            hsl(203deg 100% 46%) 5%,
+            hsl(205deg 100% 45%) 11%,
+            hsl(207deg 100% 43%) 28%,
+            hsl(210deg 92% 44%) 63%,
+            hsl(219deg 67% 48%) 84%,
+            hsl(227deg 54% 50%) 100%);
+}
+
+.body-login {
+    background-color: #fefefe;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 15px;
+    width: 60%;
+    height: 650px;
+    max-height: 95vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    font-family: "Inter", serif;
+    height: 100%;
+    min-height: 100vh;
+    background-image: var(--bg-gradient);
+}
+
+h1 {
+    color: #00D1FF;
+    font-family: "Luckiest Guy", cursive;
+}
+
+label {
+    color: #00D1FF;
+}
+
+form-floating {
+    background-color: #D9D9D9;
+}
+
+.form-check-label {
+    color: #00D1FF;
+    ;
+}
+
+.form-container {
+    max-width: 350px;
+    padding: 1rem;
+}
+
+.next-page {
+    color: #00D1FF;
+}
+
+.btn {
+    background-color: #00D1FF;
+}
+
+.Our {
+    color: #00D1FF;
+}
+
+.facebook {
+    color: #3b5998;
+    margin: 10px;
+    align-items: center;
+}
+
+.google {
+    color: #ea4335;
+    margin: 10px;
+    align-items: center;
+}
+
+img {
+    position: bottom;
+    align-items: bottom;
+    max-width: 150%;
+    height: auto;
+}
+
+@media (max-width:1400px) {
+    .body-login {
+        height: 600px;
+    }
+}
+
+@media (max-width:1024px) {
+    .body-login {
+        height: 650px;
+    }
+}
+
+@media (max-width:768px) {
+    .body-login {
+        height: 610px;
+    }
+}
